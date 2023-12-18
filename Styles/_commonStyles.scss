@@ -1,0 +1,25 @@
+//all page styles
+* {
+  color: white;
+}
+
+//display flex main classes
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexSpaceAround {
+  display: flex;
+  justify-content: space-around;
+}
+
+.itemAlignCenter {
+  display: flex;
+  align-items: center;
+}
