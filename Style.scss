@@ -1,0 +1,220 @@
+// link other scss files
+@import "./Styles/commonStyles";
+
+// nav bar styles
+nav {
+  background-color: black;
+  padding: 20px 250px;
+  display: flex;
+  align-items: center;
+  // sandwich only appears when screen is 1475px size
+  .sandwich {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  @media screen and (min-width: 1475px) {
+    div.sandwich {
+      display: none;
+    }
+  }
+
+  .shopCategories {
+    h2 {
+      margin: 10px;
+      color: #fff;
+      text-align: center;
+      font-family: Ubuntu;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%; /* 20px */
+      letter-spacing: -0.5px;
+    }
+  }
+  // categories colapse when screen is less than 1475px
+  @media screen and (max-width: 1475px) {
+    div.shopCategories {
+      display: none;
+    }
+    svg.heart {
+      display: none;
+    }
+
+    padding: 20px 30px;
+  }
+
+  .userNav {
+    // width: 300px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // icons made with svg, theyr style here
+    .icons {
+      margin-right: 24px;
+      .shoppingCart {
+        p {
+          color: #fff;
+          text-align: center;
+          font-family: Ubuntu;
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 100%; /* 10px */
+          letter-spacing: -0.25px;
+        }
+      }
+      svg {
+        width: 30px;
+        height: 30px;
+        margin: 12px;
+      }
+    }
+    .userProf {
+      display: flex;
+      align-items: center;
+      img {
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+        border-radius: 100%;
+        border: 1px solid #cdcdcd;
+        margin-right: 12px;
+        //   background: url(<path-to-image>),
+        // lightgray 0px -8.213px / 100% 151.333% no-repeat;
+      }
+      .userDetails {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        h3 {
+          color: #fff;
+          //   text-align: center;
+          font-family: Ubuntu;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 100%; /* 16px */
+          letter-spacing: -0.4px;
+        }
+        h4 {
+          color: #5f5f5f;
+          //   text-align: center;
+          font-family: Ubuntu;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 100%; /* 16px */
+          letter-spacing: -0.4px;
+        }
+      }
+      // when screen size is 1475px user details colapse
+      @media screen and (max-width: 1475px) {
+        div.userDetails {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+//header styles
+header {
+  background-color: black;
+  padding: 0 150px;
+  .beExtraText {
+    color: white;
+    width: 420px;
+    // display: flex;
+    // flex-direction: column;
+    h1 {
+      color: #5f5f5f;
+      font-family: Ubuntu;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%; /* 36px */
+      letter-spacing: -0.9px;
+    }
+    h2 {
+      color: #fff;
+      font-family: Ubuntu;
+      font-size: 72px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%; /* 72px */
+      letter-spacing: -1.8px;
+    }
+    p {
+      color: #5f5f5f;
+      font-family: Ubuntu;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 36px */
+      letter-spacing: -0.6px;
+    }
+    .searchBar {
+      gap: 8px;
+      border-radius: 100px;
+      background: #161616;
+      width: 585px;
+      padding: 10px 10px 10px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h1 {
+        color: #5f5f5f;
+        font-family: Ubuntu;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        margin: 0;
+      }
+      .searchBtn {
+        display: flex;
+        width: 140px;
+        height: 50px;
+        padding: 8px 32px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 33px;
+        background: #fff;
+        box-shadow: 2px 2px 0px 0px rgba(69, 63, 63, 0.13) inset;
+        h3 {
+          color: #000;
+          text-align: center;
+
+          /* Button */
+          font-family: Ubuntu;
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 20px; /* 200% */
+          letter-spacing: 2.1px;
+          text-transform: uppercase;
+          margin: 0;
+        }
+      }
+    }
+    .scroll {
+      color: #fff;
+      font-family: Ubuntu;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 150% */
+      display: flex;
+      align-items: center;
+      margin-top: 100px;
+    }
+  }
+  .photoSlide {
+    img {
+      width: 600px;
+      height: 900px;
+      flex-shrink: 0;
+    }
+  }
+}
