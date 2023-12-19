@@ -309,3 +309,92 @@ header {
     }
   }
 }
+
+//collections carousel styles
+.collections {
+  background-color: black;
+  padding-right: 14%;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  .collectionCards {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+  }
+
+  .collectionCard {
+    height: 570px;
+    // height: 50vh;
+    // width: 450px;
+    width: 40vw;
+    margin-left: 50px;
+  }
+
+  .autumn {
+    background: url(./Assets/Photos/Autumn.png);
+  }
+
+  @media screen and (max-width: 1475px) {
+    div.autumn img {
+      background-position: -300px;
+      background-repeat: no-repeat;
+      background-size: auto 70%;
+    }
+  }
+
+  .classic {
+    background: url(./Assets/Photos/Classic.png);
+  }
+
+  .professional {
+    background: url(./Assets/Photos/Professional.png);
+  }
+}
+
+//casual style div styles
+.casualStyle {
+  background-color: black;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  .casualStyleDesc {
+    display: flex;
+    justify-content: space-around;
+    .casualStyleTitle {
+      h1 {
+        color: #fff;
+        text-align: center;
+        font-family: Ubuntu;
+        margin-bottom: 0;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px; /* 100% */
+      }
+      .casualStyleStyle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0;
+        h2 {
+          margin-bottom: 0;
+          color: var(--Gray-Medium, #5f5f5f);
+          text-align: center;
+          font-family: Ubuntu;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 100%; /* 40px */
+        }
+      }
+    }
+  }
+
+  .styleDesc {
+    width: 60%;
+    flex-shrink: 0;
+  }
+}

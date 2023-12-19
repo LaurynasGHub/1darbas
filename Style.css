@@ -288,4 +288,79 @@ header .photoControlls .arrows {
   header .photoControlls .arrows {
     display: none;
   }
+}
+.collections {
+  background-color: black;
+  padding-right: 14%;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.collections .collectionCards {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+.collections .collectionCard {
+  height: 570px;
+  width: 40vw;
+  margin-left: 50px;
+}
+.collections .autumn {
+  background: url(./Assets/Photos/Autumn.png);
+}
+@media screen and (max-width: 1475px) {
+  .collections div.autumn img {
+    background-position: -300px;
+    background-repeat: no-repeat;
+    background-size: auto 70%;
+  }
+}
+.collections .classic {
+  background: url(./Assets/Photos/Classic.png);
+}
+.collections .professional {
+  background: url(./Assets/Photos/Professional.png);
+}
+
+.casualStyle {
+  background-color: black;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.casualStyle .casualStyleDesc {
+  display: flex;
+  justify-content: space-around;
+}
+.casualStyle .casualStyleDesc .casualStyleTitle h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Ubuntu;
+  margin-bottom: 0;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 100% */
+}
+.casualStyle .casualStyleDesc .casualStyleTitle .casualStyleStyle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0;
+}
+.casualStyle .casualStyleDesc .casualStyleTitle .casualStyleStyle h2 {
+  margin-bottom: 0;
+  color: var(--Gray-Medium, #5f5f5f);
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 40px */
+}
+.casualStyle .styleDesc {
+  width: 60%;
+  flex-shrink: 0;
 }/*# sourceMappingURL=Style.css.map */
