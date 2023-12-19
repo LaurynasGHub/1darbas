@@ -673,3 +673,335 @@ header {
   .saleImg {
   }
 }
+
+//professional style styles
+.professionalStyle {
+  background-color: black;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  .casualStyleDesc {
+    display: flex;
+    justify-content: space-around;
+    .casualStyleTitle {
+      h1 {
+        color: #fff;
+        text-align: center;
+        font-family: Ubuntu;
+        margin-bottom: 0;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px; /* 100% */
+      }
+      .casualStyleStyle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0;
+        h2 {
+          margin-bottom: 0;
+          color: var(--Gray-Medium, #5f5f5f);
+          text-align: center;
+          font-family: Ubuntu;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 100%; /* 40px */
+        }
+      }
+    }
+  }
+
+  .styleDesc {
+    width: 60%;
+    flex-shrink: 0;
+  }
+
+  .casualButton {
+    padding: 50px 8% 50px 0;
+    display: flex;
+    justify-content: flex-end;
+    button {
+      border-radius: 33px;
+      background: #1b1b1b;
+      text-align: center;
+      font-family: Ubuntu;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px;
+      letter-spacing: 2.1px;
+      text-transform: uppercase;
+      padding: 8px 48px;
+    }
+  }
+
+  .productCards {
+    padding: 20px 5% 100px;
+    .productCardBoots {
+      .newIn {
+        background-image: url(./Assets/Photos/Varlyte.png);
+        width: 441px;
+        height: 585px;
+        background-size: contain;
+        display: flex;
+        align-items: end;
+        h1 {
+          padding: 12px 24px;
+          margin-bottom: 50px;
+          background: #423496;
+          font-family: Ubuntu;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0.2px;
+        }
+      }
+      .productDesc {
+        background-color: black;
+        width: 441px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .price {
+          h1 {
+            color: #fff;
+            font-family: Ubuntu;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%;
+            letter-spacing: 0.2px;
+          }
+          .discount {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            h2 {
+              color: #fff;
+              font-feature-settings: "clig" off, "liga" off;
+              font-family: Ubuntu;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 20px; /* 83.333% */
+              letter-spacing: 0.2px;
+            }
+            h3 {
+              padding-left: 10px;
+              color: #5f5f5f;
+              font-feature-settings: "clig" off, "liga" off;
+              font-family: Ubuntu;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 16px; /* 100% */
+              letter-spacing: 0.2px;
+              text-decoration: line-through;
+            }
+          }
+        }
+        .starsColor {
+          display: flex;
+          align-items: flex-end;
+          flex-direction: column;
+          .stars {
+            height: 20px;
+            display: flex;
+            align-items: center;
+            h1 {
+              color: #fff;
+              font-family: Ubuntu;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 20px;
+              letter-spacing: 0.2px;
+              margin: 2px 5px 0;
+            }
+          }
+          .colors {
+            .colorSvg {
+              border-radius: 200px;
+              border: 1px solid white;
+            }
+          }
+        }
+      }
+    }
+    .productCardTrousers {
+      .newIn {
+        background-image: url(./Assets/Photos/Outfit.png);
+        width: 441px;
+        height: 585px;
+        background-size: contain;
+        display: flex;
+        align-items: end;
+        h1 {
+          padding: 12px 24px;
+          margin-bottom: 50px;
+          background: #423496;
+          font-family: Ubuntu;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0.2px;
+        }
+      }
+      .productDesc {
+        background-color: black;
+        width: 441px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .price {
+          h1 {
+            color: #fff;
+            font-family: Ubuntu;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%;
+            letter-spacing: 0.2px;
+          }
+          h2 {
+            color: #fff;
+            font-feature-settings: "clig" off, "liga" off;
+            font-family: Ubuntu;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 20px; /* 83.333% */
+            letter-spacing: 0.2px;
+          }
+        }
+        .starsColor {
+          display: flex;
+          align-items: flex-end;
+          flex-direction: column;
+          .stars {
+            height: 20px;
+            display: flex;
+            align-items: center;
+            h1 {
+              color: #fff;
+              font-family: Ubuntu;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 20px;
+              letter-spacing: 0.2px;
+              margin: 2px 5px 0;
+            }
+          }
+          .colors {
+            .colorSvg {
+              border-radius: 200px;
+              border: 1px solid white;
+            }
+          }
+        }
+      }
+    }
+    .productCardTshirts {
+      .newIn {
+        background-image: url(./Assets/Photos/Suit.png);
+        width: 441px;
+        height: 585px;
+        background-size: contain;
+        display: flex;
+        align-items: end;
+        h1 {
+          padding: 12px 24px;
+          margin-bottom: 50px;
+          background: #423496;
+          font-family: Ubuntu;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0.2px;
+        }
+      }
+      .productDesc {
+        background-color: black;
+        width: 441px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .price {
+          h1 {
+            color: #fff;
+            font-family: Ubuntu;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%;
+            letter-spacing: 0.2px;
+          }
+          .discount {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            h2 {
+              color: #fff;
+              font-feature-settings: "clig" off, "liga" off;
+              font-family: Ubuntu;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 20px; /* 83.333% */
+              letter-spacing: 0.2px;
+            }
+            h3 {
+              padding-left: 10px;
+              color: #5f5f5f;
+              font-feature-settings: "clig" off, "liga" off;
+              font-family: Ubuntu;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 16px; /* 100% */
+              letter-spacing: 0.2px;
+              text-decoration: line-through;
+            }
+          }
+        }
+        .starsColor {
+          display: flex;
+          align-items: flex-end;
+          flex-direction: column;
+          .stars {
+            height: 20px;
+            display: flex;
+            align-items: center;
+            h1 {
+              color: #fff;
+              font-family: Ubuntu;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 20px;
+              letter-spacing: 0.2px;
+              margin: 2px 5px 0;
+            }
+          }
+          .colors {
+            //border should be applied only to the first color of the pallete
+            svg {
+              border-radius: 200px;
+              border: 1px solid white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//footer styles
+footer {
+}
