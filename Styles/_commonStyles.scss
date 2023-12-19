@@ -3,10 +3,18 @@
   color: white;
 }
 
+//variables
+$prodCardWidth: 441px;
+
 //display flex main classes
 .flexRow {
   display: flex;
   flex-direction: row;
+}
+
+.flexCollumn {
+  display: flex;
+  flex-direction: column;
 }
 
 .flexSpaceBetween {
