@@ -20,6 +20,10 @@ nav {
   }
 
   .shopCategories {
+    width: 650px;
+    display: flex;
+    align-items: center;
+
     h2 {
       margin: 10px;
       color: #fff;
@@ -30,6 +34,10 @@ nav {
       font-weight: 400;
       line-height: 100%; /* 20px */
       letter-spacing: -0.5px;
+    }
+
+    svg {
+      margin-right: 2%;
     }
   }
   // categories colapse when screen is less than 1475px
@@ -122,12 +130,18 @@ nav {
 //header styles
 header {
   background-color: black;
-  padding: 0 150px;
+  padding: 0 0 0 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  flex-wrap: wrap;
+
   .beExtraText {
-    color: white;
-    width: 420px;
-    // display: flex;
-    // flex-direction: column;
+    width: 676px;
+    height: 104px;
+    grid-column-start: 1;
+    grid-row: 3/6;
+
     h1 {
       color: #5f5f5f;
       font-family: Ubuntu;
@@ -137,6 +151,7 @@ header {
       line-height: 100%; /* 36px */
       letter-spacing: -0.9px;
     }
+
     h2 {
       color: #fff;
       font-family: Ubuntu;
@@ -146,6 +161,7 @@ header {
       line-height: 100%; /* 72px */
       letter-spacing: -1.8px;
     }
+
     p {
       color: #5f5f5f;
       font-family: Ubuntu;
@@ -155,23 +171,27 @@ header {
       line-height: 150%; /* 36px */
       letter-spacing: -0.6px;
     }
+
     .searchBar {
+      width: 585px;
+      padding: 8px 10px 8px 25px;
       gap: 8px;
       border-radius: 100px;
       background: #161616;
-      width: 585px;
-      padding: 10px 10px 10px 25px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       h1 {
         color: #5f5f5f;
         font-family: Ubuntu;
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
-        margin: 0;
+        line-height: 30px; /* 150% */
+        margin-bottom: 0;
       }
+
       .searchBtn {
         display: flex;
         width: 140px;
@@ -179,9 +199,17 @@ header {
         padding: 8px 32px;
         justify-content: center;
         align-items: center;
+        gap: 8px;
         border-radius: 33px;
         background: #fff;
         box-shadow: 2px 2px 0px 0px rgba(69, 63, 63, 0.13) inset;
+
+        svg {
+          width: 16px;
+          height: 16px;
+          flex-shrink: 0;
+        }
+
         h3 {
           color: #000;
           text-align: center;
@@ -194,27 +222,179 @@ header {
           line-height: 20px; /* 200% */
           letter-spacing: 2.1px;
           text-transform: uppercase;
-          margin: 0;
+          margin-bottom: 0;
         }
       }
     }
-    .scroll {
-      color: #fff;
-      font-family: Ubuntu;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 30px; /* 150% */
-      display: flex;
-      align-items: center;
-      margin-top: 100px;
+  }
+
+  .scroll {
+    grid-row: 6;
+    grid-column-start: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    svg {
+      margin-right: 2%;
     }
   }
+
   .photoSlide {
+    // grid-column-start: 2;
+    grid-row: 1/ 6;
+
     img {
       width: 600px;
       height: 900px;
       flex-shrink: 0;
     }
+  }
+
+  .photoControlls {
+    margin-right: 30%;
+    grid-row-start: 6;
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+    .elipses {
+      display: inline-flex;
+      padding: 8px;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .arrows {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+//header and header elements resizing when window is small
+@media screen and (max-width: 1475px) {
+  header {
+    grid-template-rows: repeat(4, 1fr);
+
+    .beExtraText {
+      grid-row: 2;
+
+      .searchBar {
+        margin-top: 5%;
+      }
+    }
+
+    .scroll {
+      display: none;
+    }
+
+    .photoSlide {
+      grid-row: 1;
+      display: flex;
+    }
+
+    .photoControlls {
+      position: absolute;
+      left: 40%;
+      top: 110%;
+      display: flex;
+      flex-direction: row;
+
+      .arrows {
+        display: none;
+      }
+    }
+  }
+}
+
+//collections carousel styles
+.collections {
+  background-color: black;
+  padding-right: 14%;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  .collectionCards {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+  }
+
+  .collectionCard {
+    height: 570px;
+    // height: 50vh;
+    // width: 450px;
+    width: 40vw;
+    margin-left: 50px;
+  }
+
+  .autumn {
+    background: url(./Assets/Photos/Autumn.png);
+  }
+
+  @media screen and (max-width: 1475px) {
+    div.autumn img {
+      background-position: -300px;
+      background-repeat: no-repeat;
+      background-size: auto 70%;
+    }
+  }
+
+  .classic {
+    background: url(./Assets/Photos/Classic.png);
+  }
+
+  .professional {
+    background: url(./Assets/Photos/Professional.png);
+  }
+}
+
+//casual style div styles
+.casualStyle {
+  background-color: black;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  .casualStyleDesc {
+    display: flex;
+    justify-content: space-around;
+    .casualStyleTitle {
+      h1 {
+        color: #fff;
+        text-align: center;
+        font-family: Ubuntu;
+        margin-bottom: 0;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px; /* 100% */
+      }
+      .casualStyleStyle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0;
+        h2 {
+          margin-bottom: 0;
+          color: var(--Gray-Medium, #5f5f5f);
+          text-align: center;
+          font-family: Ubuntu;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 100%; /* 40px */
+        }
+      }
+    }
+  }
+
+  .styleDesc {
+    width: 60%;
+    flex-shrink: 0;
   }
 }
